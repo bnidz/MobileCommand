@@ -1,0 +1,6 @@
+mac/PhonePad.app/
+mac/config.json
+mac/phonepad.log
+ios/PhonePad.xcodeproj/
+ios/build/
+.DS_Store

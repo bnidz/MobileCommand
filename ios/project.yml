@@ -1,0 +1,40 @@
+name: PhonePad
+options:
+  bundleIdPrefix: com.ramisuvanto
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    DEVELOPMENT_TEAM: JAN6H25J7X
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+targets:
+  PhonePad:
+    type: application
+    platform: iOS
+    sources:
+      - PhonePad
+      - path: ../shared
+        group: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ramisuvanto.phonepad
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+    info:
+      path: PhonePad/Info.plist
+      properties:
+        CFBundleDisplayName: PhonePad
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UIBackgroundModes: [audio]
+        NSMicrophoneUsageDescription: PhonePad sends your voice to your Mac as its microphone.
+        NSLocalNetworkUsageDescription: PhonePad connects to your Mac on the local network.
+        NSBonjourServices: [_phonepad._tcp]
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
