@@ -5,7 +5,7 @@ import Foundation
 // JSON frames carry control messages; audio frames carry 48 kHz mono Int16 PCM.
 
 enum PP {
-    static let serviceType = "_phonepad._tcp"
+    static let serviceType = "_mobilecommand._tcp"
     static let port: UInt16 = 47800
     static let audioSampleRate: Double = 48000
 }

@@ -1,4 +1,4 @@
-# PhonePad
+# MobileCommand
 
 iPhone as a Mac trackpad, quick-key pad and wireless microphone.
 

@@ -26,7 +26,7 @@ final class MicStreamer {
         let input = engine.inputNode
         let inFormat = input.outputFormat(forBus: 0)
         guard let conv = AVAudioConverter(from: inFormat, to: outFormat) else {
-            throw NSError(domain: "PhonePad", code: 1, userInfo: [NSLocalizedDescriptionKey: "No converter for \(inFormat)"])
+            throw NSError(domain: "MobileCommand", code: 1, userInfo: [NSLocalizedDescriptionKey: "No converter for \(inFormat)"])
         }
         converter = conv
         let ratio = PP.audioSampleRate / inFormat.sampleRate

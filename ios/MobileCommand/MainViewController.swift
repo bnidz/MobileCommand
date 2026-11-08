@@ -297,7 +297,7 @@ final class MainViewController: UIViewController, UITextFieldDelegate {
     // MARK: Settings
 
     @objc private func showSettings() {
-        let a = UIAlertController(title: "PhonePad", message: "Mac: \(statusLabel.text ?? "")", preferredStyle: .actionSheet)
+        let a = UIAlertController(title: "MobileCommand", message: "Mac: \(statusLabel.text ?? "")", preferredStyle: .actionSheet)
         a.addAction(UIAlertAction(title: "Enter pairing PIN", style: .default) { [weak self] _ in self?.askPin(host: "your Mac") })
         a.addAction(UIAlertAction(title: "Mac address (if not found)", style: .default) { [weak self] _ in self?.askHost() })
         a.addAction(UIAlertAction(title: "Reconnect", style: .default) { [weak self] _ in self?.connection.reconnect() })
@@ -310,7 +310,7 @@ final class MainViewController: UIViewController, UITextFieldDelegate {
         guard !askingPin, presentedViewController == nil else { return }
         askingPin = true
         let a = UIAlertController(title: "Pair with \(host)",
-                                  message: "Enter the PIN shown in the PhonePad menu on the Mac.", preferredStyle: .alert)
+                                  message: "Enter the PIN shown in the MobileCommand menu on the Mac.", preferredStyle: .alert)
         a.addTextField { tf in tf.keyboardType = .numberPad; tf.placeholder = "123456"; tf.text = self.connection.pin }
         a.addAction(UIAlertAction(title: "Cancel", style: .cancel) { [weak self] _ in self?.askingPin = false })
         a.addAction(UIAlertAction(title: "Pair", style: .default) { [weak self, weak a] _ in

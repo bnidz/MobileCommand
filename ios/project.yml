@@ -1,4 +1,4 @@
-name: PhonePad
+name: MobileCommand
 options:
   bundleIdPrefix: com.ramisuvanto
   deploymentTarget:
@@ -9,29 +9,29 @@ settings:
     CODE_SIGN_STYLE: Automatic
     SWIFT_VERSION: "5.0"
 targets:
-  PhonePad:
+  MobileCommand:
     type: application
     platform: iOS
     sources:
-      - PhonePad
+      - MobileCommand
       - path: ../shared
         group: Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.ramisuvanto.phonepad
+        PRODUCT_BUNDLE_IDENTIFIER: com.ramisuvanto.mobilecommand
         TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: ""
     info:
-      path: PhonePad/Info.plist
+      path: MobileCommand/Info.plist
       properties:
-        CFBundleDisplayName: PhonePad
+        CFBundleDisplayName: MobileCommand
         UILaunchScreen: {}
         UIRequiresFullScreen: true
         UIStatusBarHidden: true
         UIBackgroundModes: [audio]
-        NSMicrophoneUsageDescription: PhonePad sends your voice to your Mac as its microphone.
-        NSLocalNetworkUsageDescription: PhonePad connects to your Mac on the local network.
-        NSBonjourServices: [_phonepad._tcp]
+        NSMicrophoneUsageDescription: MobileCommand sends your voice to your Mac as its microphone.
+        NSLocalNetworkUsageDescription: MobileCommand connects to your Mac on the local network.
+        NSBonjourServices: [_mobilecommand._tcp]
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
           - UIInterfaceOrientationLandscapeLeft

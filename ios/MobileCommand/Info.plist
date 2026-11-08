@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>PhonePad</string>
+	<string>MobileCommand</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,12 +22,12 @@
 	<string>1</string>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>_phonepad._tcp</string>
+		<string>_mobilecommand._tcp</string>
 	</array>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>PhonePad connects to your Mac on the local network.</string>
+	<string>MobileCommand connects to your Mac on the local network.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>PhonePad sends your voice to your Mac as its microphone.</string>
+	<string>MobileCommand sends your voice to your Mac as its microphone.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

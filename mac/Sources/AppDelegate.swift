@@ -34,7 +34,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             DispatchQueue.main.async { self.audio.stop() }
         }
         server.start()
-        Log.write("PhonePad started, config at \(ConfigStore.url.path)")
+        Log.write("MobileCommand started, config at \(ConfigStore.url.path)")
     }
 
     func applicationWillTerminate(_ note: Notification) {
@@ -123,8 +123,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         case .pairing: symbol = "iphone.badge.exclamationmark"
         case .connected(_, let mic): symbol = mic ? "iphone.and.arrow.forward.inward" : "iphone.radiowaves.left.and.right"
         }
-        let img = NSImage(systemSymbolName: symbol, accessibilityDescription: "PhonePad")
-            ?? NSImage(systemSymbolName: "iphone", accessibilityDescription: "PhonePad")
+        let img = NSImage(systemSymbolName: symbol, accessibilityDescription: "MobileCommand")
+            ?? NSImage(systemSymbolName: "iphone", accessibilityDescription: "MobileCommand")
         img?.isTemplate = true
         statusItem.button?.image = img
     }
@@ -154,7 +154,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(item("Reload config & trackpad settings", #selector(reloadConfig)))
         menu.addItem(item("New pairing PIN", #selector(newPin)))
         menu.addItem(.separator())
-        menu.addItem(item("Quit PhonePad", #selector(quit)))
+        menu.addItem(item("Quit MobileCommand", #selector(quit)))
     }
 
     private func item(_ title: String, _ sel: Selector) -> NSMenuItem {

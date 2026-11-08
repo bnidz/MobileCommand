@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleIdentifier</key>
-    <string>com.ramisuvanto.phonepad.mac</string>
+    <string>com.ramisuvanto.mobilecommand.mac</string>
     <key>CFBundleName</key>
-    <string>PhonePad</string>
+    <string>MobileCommand</string>
     <key>CFBundleExecutable</key>
-    <string>PhonePad</string>
+    <string>MobileCommand</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
@@ -19,10 +19,10 @@
     <key>LSUIElement</key>
     <true/>
     <key>NSLocalNetworkUsageDescription</key>
-    <string>PhonePad listens for your iPhone on the local network.</string>
+    <string>MobileCommand listens for your iPhone on the local network.</string>
     <key>NSBonjourServices</key>
     <array>
-        <string>_phonepad._tcp</string>
+        <string>_mobilecommand._tcp</string>
     </array>
 </dict>
 </plist>

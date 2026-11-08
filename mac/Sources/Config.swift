@@ -49,7 +49,7 @@ struct PadConfig: Codable {
 }
 
 enum ConfigStore {
-    /// config.json lives next to PhonePad.app (i.e. in mac/), like Dictator2's settings.
+    /// config.json lives next to MobileCommand.app (i.e. in mac/), like Dictator2's settings.
     static var url: URL {
         Bundle.main.bundleURL.deletingLastPathComponent().appendingPathComponent("config.json")
     }
@@ -72,7 +72,7 @@ enum ConfigStore {
 }
 
 enum Log {
-    private static let url = Bundle.main.bundleURL.deletingLastPathComponent().appendingPathComponent("phonepad.log")
+    private static let url = Bundle.main.bundleURL.deletingLastPathComponent().appendingPathComponent("mobilecommand.log")
     private static let queue = DispatchQueue(label: "pp.log")
     private static let fmt: DateFormatter = {
         let f = DateFormatter(); f.dateFormat = "HH:mm:ss.SSS"; return f
