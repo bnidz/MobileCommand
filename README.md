@@ -89,3 +89,11 @@ Next:
 - In-app editor for quick keys and gestures
 - Glanceable status of what the Mac is doing (agent/job progress, notifications)
 - USB connection mode
+
+## License
+
+Copyright (C) 2026 Rami Suvanto.
+
+MobileCommand is free software, licensed under the [GNU General Public License v3.0](LICENSE).
+You may use, study, modify and share it, but any distributed version, including apps or products
+built on this code, must also be released under GPL-3.0 with its source code.
